@@ -1,0 +1,31 @@
+using System;
+namespace S3T2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var pal = Console.ReadLine();
+            double pl = pal.Length;
+            int plj = pal.Length-1;
+            double dl = Math.Round(pl / 2);
+            double dl3 = Convert.ToInt32(Math.Floor(pl / 2));
+            string x = " ",y= " ";
+            //double dl = 1.02;
+            Console.WriteLine(dl+" "+ pal.Length);
+            for (int i = 0; i < dl; i++){x += Convert.ToString(pal[i]);}
+            for (int j = plj; j >= dl3; j--){y += Convert.ToString(pal[j]);}
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            //Check
+            if (x == y)
+            {
+                Console.WriteLine("True");
+            }
+            else
+            {
+                Console.WriteLine("False");
+            }
+        }
+    }
+    }
