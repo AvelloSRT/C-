@@ -1,0 +1,27 @@
+using System;
+namespace S3T1
+{
+    class Program
+    {
+        static void Main(string[] args) {
+        double[,] Liczby = {{3.9, 1.5, -2.1 },
+        {-0.4, 1.1, 2.3 },
+        {10.5, -0.3, 2.4 },
+        {0.1, -20.1, -0.1 }};
+            
+            for(var i = 0;i<4;i++)
+            {
+                
+                for (var j = 0; j < 3; j++)
+                {
+                    if (Liczby[i, 0] > 0)
+                    {
+                        Console.Write(Liczby[i, j] + "| ");
+                    }
+                    
+                }
+                Console.WriteLine(" ");
+            } 
+    } }
+   
+}
