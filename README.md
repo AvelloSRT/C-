@@ -1,0 +1,1 @@
+This C# program checks if a user-input string is a palindrome (reads the same backward as forward). It divides the string into two halves, constructs each half separately, and compares them to determine if they are equal. The result ("True" or "False") is then displayed.
